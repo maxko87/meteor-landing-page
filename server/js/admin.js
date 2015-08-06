@@ -1,4 +1,4 @@
-var ADMIN_USERS = ["admin"];
+var ADMIN_USERS = [Meteor.settings.github_username];
 
 var isAdmin = function(userId) {
   try {

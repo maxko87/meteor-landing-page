@@ -5,7 +5,7 @@ A simple landing page built with meteor based on http://usabilityhour.com/valida
 ## Features
 
 - Stores signups
-- Admin page to view signups
+- Admin page (secured with GitHub login) to view signups
 - Google analytics tracking for every button
 
 ## Suggest Features
