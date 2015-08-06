@@ -8,6 +8,8 @@
   License: none (public domain)
 */
 
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -72,25 +74,25 @@ a {
 	text-decoration: none;
 }
 
+
 h1 {
 	font-family: 'bariol_boldbold';
-	font-size: 100px;
-	padding: 50px 0;
-	line-height: 60px;
+	font-size: 40px;
+	padding-bottom: 15px;
+	line-height: 40px;
 }
 
 h2 {
 	font-family: 'bariol_boldbold';
-	font-size: 60px;
-	padding-bottom: 15px;
-	line-height: 60px;
-}
-
-h3 {
-	font-family: 'bariol_boldbold';
 	font-size: 32px;
 	padding-bottom: 15px;
 	line-height: 40px;
+}
+
+h3 {
+	font-size: 22px;
+	padding-top: 15px;
+	line-height: 28px;
 }
 
 h4 {
@@ -113,23 +115,32 @@ strike {
 }
 
 #cta-container {
-	 background-image: url(../images/bg.jpg);
+	 background-image: linear-gradient(160deg,#4280c5 13%,#59f0ff 100%);
 	 background-attachment: fixed;
 	 color: white;
 
 }
-
-.cta-top {
-	max-width: 960px;
-	margin: 0 auto;
-	padding-bottom: 95px;
-	background: rgba(0, 0, 0, .5);
+#mce-responses {
+	margin-bottom: 10px;
+}
+#mce-error-response,
+#mce-success-response {
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	color: white;
+}
+#mce-error-response {
+	background: #E47061;
+}
+#mce-success-response {
+	background: #61D767;
 }
 
-.cta-bottom {
+.cta {
 	max-width: 960px;
 	margin: 0 auto;
-	padding-bottom: 95px;
+	padding-bottom: 0;
 }
 
 .copy {
@@ -156,20 +167,6 @@ strike {
 	background-color: #c0e4fb;
 }
 
-.bottom-btn {
-	background-color: #37a1e4;
-	font-family: 'bariol_boldbold';
-	color: #FFF;
-	padding:11px 30px;
-	border-radius: 20px;
-	font-size: 22px;
-}
-
-.bottom-btn:hover {
-	cursor: pointer;
-	background-color: #c0e4fb;
-}
-
 .pricing {
 	max-width: 960px;
 	margin: 0 auto;
@@ -177,14 +174,16 @@ strike {
 	text-align: center;
 	font-family: 'bariol_boldbold';
 }
-
+img {
+	max-width: 100%;
+}
 .plan {
 	width: 210px;
 	height: 300px;
 	border-radius: 8px;
 	background-color: #37a1e4;
 	display: inline-block;
-	margin: 15px 0px;
+	margin: 15px 22px;
 	color: white;
 	padding: 8px 0px;
 }
@@ -447,20 +446,25 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 
 /* Mobile Landscape */
 @media screen and (max-width: 934px) {
-
+.cta,
+.feature-b-copy,
+.feature-b-image,
+.feature-a-image,
+.feature-a-copy {
+	padding-left: 15px;
+	padding-right: 15px;
+}
 .copy{
 	padding: 0 20px 40px 20px;
 }
 
 
 .feature-a {
-	text-align: center;
 	margin: 0 auto;
 	with: auto;
 }
 
 .feature-b {
-	text-align: center;
 }
 
 .feature-a-image {
@@ -477,9 +481,6 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 	max-width: 100%;
 }
 
-.feature-b-image {
-	float: none;
-	}
 
 .feature-b-copy {
 	float: none;
@@ -500,22 +501,12 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 	padding: 0 10px 40px 0;
 }
 
-.feature-a-image{
-	display: none;
-}
-
-.feature-b-image {
-	display: none;
-}
-
 .feature-a {
-	text-align: center;
 	margin: 0 auto;
 	with: auto;
 }
 
 .feature-b {
-	text-align: center;
 }
 
 .feature-b-copy {
