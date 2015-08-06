@@ -1,0 +1,15 @@
+<template name="admin">
+  {{> loginButtons}}
+  {{#if isAdmin}}
+    {{> adminPage}}
+  {{/if}}
+</template>
+
+<template name="adminPage">
+  <table>
+    {{#each signups}}
+     {{ this.email }},{{ this.button }},{{ this.feedback }},{{ this.createdAt }}
+     <br>
+    {{/each }}
+  </table>
+</template>
