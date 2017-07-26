@@ -4,7 +4,7 @@ Template.landingPage.onRendered(function() {
 
 Template.landingPage.helpers({
   applicationName: function() {
-    return "Your Application Name"
+    return "1kFans"
   }
 })
 
